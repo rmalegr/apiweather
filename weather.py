@@ -10,9 +10,15 @@ def get_current_weather(city="Kansas City"):
 
     weather_data = requests.get(request_url).json()
     return weather_data
+
+
+
 if __name__ == "__main__":
     city = input("Enter the name of the city: ")
+    
     weather_data = get_current_weather(city)
+
+    print("\n")
     pprint(weather_data)
     # print(weather_data["main"]["temp"])
     # print(weather_data["weather"][0]["description"])

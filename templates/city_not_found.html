@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Weather Conditions</title>
- 
-    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet" type="text/css">
+    <title>City not Found</title>
+    <link href="{{url_for('static', filename='style.css')}}" rel="stylesheet" type="text/css">  
 </head>
 <body>
-    <h1>Get Weather Conditions</h1>
-    
+    <h1>City Not Found</h1>
+    <p>Sorry, we couldn't find the weather information for the city you entered.</p>
+    <p>Please try again with a different city name.</p>
     <form action="/weather" >
         <input type="text" name="city" placeholder="Enter city name" required>
         <button type="submit">Submit</button>
-    </form>
+
 </body>
 </html>
